@@ -11,10 +11,14 @@ L = 6.022e+23  #
 hc_over_k = h*c/kb 
 kbeV = 8.617269e-5 # eVK-1
 
-check=open('check.out','w')       
-    
+def check_file(a=True):
+    if a=True:
+        check=open('check.out','w')       
+    return
+
 def generate_species_list(reactions):
-    
+    #This function takes a list of reactions and extracts the species that are present
+ 
     species_list={}
     l=len(reactions)
     
